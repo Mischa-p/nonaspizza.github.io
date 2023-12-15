@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Nona's Pizza</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="projectstyles.css" />
+        <script src="formValidate.js"></script>
+	</head>
+	<body>
+        <nav id="navbar1">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menupage.html">MENU</a></li>
+                <li><a href="delivery.html">DELIVERY</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div id="display-sign">
+                <h1>Nona's</h1>
+                <p><img src="images/pizza-bud.png" alt="Pizza Bud" id="pizza-bud" /></p>
+                <h1>Pizza</h1>
+            </div>
+        </header>
+        <div id="contactContainer">  
+           <form method="post" 
+				  id="order_form" 
+				  action="http://symlink.dk/code/php/submit/">
+                <h2>Order Information</h2>
+                <fieldset id="deliveryInfo">
+                    <ul>
+                        <li>
+                            <label for="fullname">Full Name</label>
+                            <input id="fullname" name="fullname" type="text"/>
+                            <p class="orderError error" id="fullname_error">* Required field</p>
+                        </li>
+                        <li>
+                            <label for="address">Address</label>
+                            <input id="address" name="address" type="text"/>
+                            <p class="orderError error" id="address_error">* Required field</p>
+                        </li>
+                        <li>
+                            <label for="city">City</label>
+                            <input id="city" name="city" type="text" />
+                            <p class="orderError error" id="city_error">* Required field</p>
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" type="text"/>
+                            <p class="orderError error" id="phone_error">* Required field</p>
+                            <p class="orderError error" id="phoneformat_error">* Invalid phone number</p>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="text"/>
+                            <p class="orderError error" id="email_error">* Required field</p>
+                            <p class="orderError error" id="emailformat_error">
+                                * Invalid email address
+                            </p>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset id="orderInfo">
+                    <ul>
+                        <li>
+                            <label for="drink">Drink</label>
+                            <input type="text" id="drink" name="drink"/>
+                        </li>
+                        <li>
+                            <label for="pizza">Pizza</label>
+                            <input type="text" id="pizza" name="pizza"/>
+                        </li>
+                        <li>
+                            <label for="dessert">Dessert</label>
+                            <input type="text" id="dessert" name="dessert"/>
+                        </li>
+                        <li>
+                            <label for="province">Combo Option</label>
+                            <select id="province" name="province">
+                                <option>- Combo -</option>
+                                <option value="C1">Combo 1</option>
+                                <option value="C2">Combo 2</option>
+                                <option value="C3">Combo 3</option>
+                            </select> 
+                        </li>
+                        <li>
+                            <label for="specialInstructions">Special Instructions</label>
+                            <textarea id="specialInstructions" name="specialInstructions" rows="4" cols="50"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+                    <p class="center">
+                        <button type="submit" id="submit">Finalize Order</button>
+                        <button type="reset" id="clear">Clear Order</button>
+                    </p>
+           </form>
+        </div>   
+        <footer>
+            <nav id="navbar2">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menupage.html">MENU</a></li>
+                    <li><a href="delivery.html">DELIVERY</a></li>
+                </ul>
+            </nav>
+        </footer> 
+    </body>
+</html>

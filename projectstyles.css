@@ -1,0 +1,310 @@
+
+
+body {
+    background-color: #F0C4CB;
+    margin: 0;
+    font-family: 'Luckiest Guy', cursive, sans-serif;
+    position: relative;
+}
+
+#container {
+    text-align: center;
+    
+}
+
+#navbar1 {
+    background-image: url('images/Checker\ Pink-White.png');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+    font-size: large;
+    height: 68px;
+}
+
+#navbar1 ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+}
+
+#navbar1 ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar1 ul li a {
+    text-decoration: none;
+    color: #5d793a;
+    font-weight: bold;
+    font-size: 2em;
+    margin-right: 15px;
+    letter-spacing: 4px;
+}
+
+#navbar2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#navbar1 ul li {
+    margin-right: 35px;
+}
+
+#navbar1 ul li:last-child {
+    margin-right: 0;
+}
+
+#navbar2 ul{
+    padding-top: 50px;
+    height: 75px;
+}
+#navbar2 ul li a {
+    text-decoration: none;
+    color: #F0C4CB;
+    font-weight: bold;
+    font-size: 0.75em;
+    margin-right: 15px;
+    letter-spacing: 4px;
+}
+
+header {
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 5em;
+    margin-top: -20px;
+    color: #841618;
+    margin-bottom: 10px;
+}
+
+#display-sign {
+    text-align: center; 
+}
+
+#display-sign h1,
+#display-sign p {
+    display: inline-block;
+    margin: 0; 
+    letter-spacing: 2px;
+}
+
+#nonas-info{
+    min-height: 730px;
+    max-width: 1000px;
+    min-width: 800px;
+    margin: 0 auto;
+}
+footer{
+    background-color: #841618;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#pizza-bud{
+    height: 175px;
+    width: auto;
+    margin-left: -10px;
+}
+/*-------------------------Above is home page and shared css---------------------------*/
+
+#menu-container{
+    display: flex;
+    height: 600px;
+    width: 75%;
+    margin: 0 auto;
+    min-height: 730px;
+    max-width: 1000px;
+    min-width: 800px;
+}
+
+#drinks,
+#pizzas,
+#desserts {
+    flex: 1; 
+    padding: 10px; 
+    text-align: center;
+}
+
+#menu-container h1{
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+
+#menu-container h3{
+    text-align: left;
+    margin-left: 20px;
+}
+
+#menu-container p{
+    font-family: 'pt sans', sans-serif;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#drinks {
+   
+    border-right: 3px solid #000; 
+}
+
+#pizzas {
+    border-right: 3px solid #000; 
+}
+
+#pizzas h3{
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: -15px;
+}
+
+#desserts .menu-item{
+    height: 70px;
+}
+
+.menu-item{
+    margin-bottom: 20px;
+}
+
+.price{
+    margin-top: -15px;
+}
+
+/*-------------------------Above is menu page -------------------------------*/
+
+#contactContainer{
+    min-height: 730px;
+    max-width: 1000px;
+    min-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+form{
+    display: contents;
+}
+#deliveryInfo,
+#orderInfo{
+    border: none;
+    padding: 0;
+    flex: 0 0 48%; 
+    box-sizing: border-box;
+}
+
+
+#contactContainer h2{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 3px;
+}
+  
+#deliveryInfo ul,
+#orderInfo ul {
+    list-style: none;
+    height: 600px;
+   
+  }
+
+#deliveryInfo label,
+#orderInfo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#deliveryInfo input[type="text"],
+#orderInfo input[type="text"],
+#deliveryInfo textarea,
+#orderInfo textarea {
+    width: 100%;
+    padding: 6px;
+}
+
+#orderInfo input[type="text"],
+#orderInfo select{
+    margin-bottom: 40px;
+}
+
+#orderInfo select {
+    width: 100%;
+    height: 30px; 
+    text-align: center;
+}
+
+.orderError {
+    margin-top: 5px; 
+   
+}
+
+#contactContainer .center{
+    text-align: center;
+    width: 100%;
+}
+
+#contactContainer .center button{
+    margin: 0 auto;
+}
+
+/*-------------------------Above is order page -------------------------------*/
+
+/* Normal styles */
+
+@media (max-width: 640px) {
+    #container{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column; 
+      
+    }
+   
+    #display-sign {
+        text-align: center;
+    }
+
+    #display-sign h1 {
+        font-size: 1.5em;
+        margin: 5px; 
+    }
+
+    #display-sign p {
+        font-size: 0.8em; 
+        margin: 5px; 
+    }
+
+#pizza-bud {
+        width: 50px;
+        height: auto;
+        margin: 5px;
+    }
+
+    #nonas-info h2 {
+        font-size: 0.9em;
+    }
+
+    #nonas-info p{
+        font-size: 0.65em;
+        background-color: #5d793a;
+    }
+
+    #nonas-info img {
+        height: 200px;
+        width: auto'
+    
+    }
+
+}
