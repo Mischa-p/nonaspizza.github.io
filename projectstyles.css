@@ -13,7 +13,7 @@ body {
 }
 
 #navbar1 {
-    background-image: url('images/Checker\ Pink-White.png');
+    background-image: url('Checker\ Pink-White.png');
     display: flex;
     justify-content: space-between;
     align-items: center;
